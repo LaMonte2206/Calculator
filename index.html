@@ -4,4 +4,13 @@
             <title>Calculator</title>
             <link rel="stylesheet" href="styles.css">
             <script src="index.js"></script>
+            <body>
+                <div ng-app="calcApp" ng-controller="calcCont">
+                    <input type="number" ng-model="opt1">
+                    <input type="number" ng-model="opt2">
+                    <button ng-click="add()">ADD</button>
+                    <button ng-click="subtract()">SUBTRACT</button>
+                    <button ng-click="multiply()">MULTIPLY</button>
+                    <button ng-click="divide()">DIVIDE</button>
+            </body>   
     </html>
