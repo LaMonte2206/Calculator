@@ -2,15 +2,34 @@
     <html>
         <head>
             <title>Calculator</title>
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+                        crossorigin="anonymous">
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+                        crossorigin="anonymous"></script>
             <link rel="stylesheet" href="styles.css">
             <script src="index.js"></script>
             <body>
                 <div ng-app="calcApp" ng-controller="calcCont">
-                    <input type="number" ng-model="opt1">
-                    <input type="number" ng-model="opt2">
-                    <button ng-click="add()">ADD</button>
-                    <button ng-click="subtract()">SUBTRACT</button>
-                    <button ng-click="multiply()">MULTIPLY</button>
-                    <button ng-click="divide()">DIVIDE</button>
+                    <div class="all">
+                     <div id="opt1">
+                        <input type="text" ng-model="opt1">
+                     </div>
+                     <div id="opt2">
+                        <input type="text" ng-model="opt2">
+                     </div>
+                     <div class="add">
+                        <button ng-click="add()"><strong>ADD</strong><span> (+) </span></button>
+                     </div>
+                     <div class="subtract">
+                        <button ng-click="subtract()"><strong>SUBTRACT</strong><span> (-) </span></button>
+                     </div>
+                     <div class="multiply">
+                        <button ng-click="multiply()"><strong>MULTIPLY</strong><span> (*) </span></button>
+                     </div>
+                     <div class="divide">
+                        <button ng-click="divide()"><strong>DIVIDE</strong><span> (/) </span></button>
+                     </div>
+                     </div>
+                </div>
             </body>   
     </html>
